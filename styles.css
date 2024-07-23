@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+main .background-image {
+  height: 95vh;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+main {
+  height: 95vh;
+  background-image: url(assets/images/bg-image.jpg);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75vw;
+  margin: auto;
+  height: 62px;
+}
+
+nav span img {
+  padding-top: 35px;
+  width: 150px;
+  position: relative; /*logo ko black background se bahar laane ke liye*/
+  z-index: 10;
+}
+
+nav .nav-buttons {
+  padding-top: 35px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.front-data {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(
+    100% - 62px
+  ); /*(main ki height - navbar ki height) seperation dene mei dikkat aari thi*/
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 15px; /*gap between elements of div*/
+  padding: 0 30px; /*responsive bnane ke liye aur 0 for top bottom*/
+}
+
+.front-data > :nth-child(1) {
+  /*immediate nth child ke liye > nhi to vo .emailBar ko bhi nth child mei include kr lega*/
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.front-data > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.front-data > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.seperation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 15.6px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.btn-red-sm {
+  background-color: red;
+  border: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lang-button {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main input {
+  padding: 15.6px 16px 15.6px;
+  width: 365.2px;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  color: white;
+}
+
+.emailBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.first {
+  height: 70vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 175px;
+  padding-right: 175px;
+  gap: 15px;
+  margin: auto;
+}
+
+.firstText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.firstText-heading {
+  font-size: 30px;
+}
+
+.firstText-para p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.firstTV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.firstTV img {
+  width: auto;
+  height: 85%;
+  position: absolute;
+}
+.firstTV video {
+  height: 47%;
+  width: auto;
+  margin-bottom: 20px;
+  margin-right: 1px;
+}
+
+.second {
+  height: 70vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 175px;
+  padding-right: 175px;
+  gap: 15px;
+  margin: auto;
+}
+
+.secondText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.secondText-heading {
+  font-size: 30px;
+}
+
+.secondText-para p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.secondPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.secondPhone img {
+  width: auto;
+  height: 85%;
+  position: relative;
+}
+
+.strangerThings {
+  margin-top: 250px;
+  height: 95.2px;
+  width: 311.6px;
+  display: flex;
+  position: absolute;
+  background-color: black;
+  border: 2px solid rgba(246, 238, 238, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stImg {
+  height: 70px;
+}
+
+.stText h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.stText p {
+  font-size: 0.875rem;
+  color: #0071eb;
+}
+
+.third {
+  height: 70vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 175px;
+  padding-right: 175px;
+  gap: 15px;
+  margin: auto;
+}
+
+.thirdText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.thirdText-heading {
+  font-size: 30px;
+}
+
+.thirdText-para p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.thirdTV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.thirdTV img {
+  width: auto;
+  height: 85%;
+  position: absolute;
+}
+.thirdTV video {
+  height: 40%;
+  width: auto;
+  margin-bottom: 175px;
+  margin-right: 1px;
+}
+
+.fourth {
+  height: 70vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 175px;
+  padding-right: 175px;
+  gap: 15px;
+  margin: auto;
+}
+
+.fourthText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.fourthText-heading {
+  font-size: 30px;
+}
+
+.fourthText-para p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.kids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.kids img {
+  width: auto;
+  height: 85%;
+  position: relative;
+}
+
+.fifth {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 100px;
+  gap: 10px;
+}
+
+.fifth-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.dabba {
+  display: flex;
+  background-color: rgba(246, 238, 238, 0.227);
+  height: 84px;
+  width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.dbtext {
+  font-size: 25px;
+}
+
+.dbplus i {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.dabba7 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.dabba8 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dabba8 button {
+  color: white;
+}
+
+.dabba8 input {
+  background-color: rgb(43, 46, 61);
+  padding: 15.6px 16px 15.6px;
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 350px;
+}
